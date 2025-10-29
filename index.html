@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Matheus Fernandes Carillo</title>
+    <title>Portfólio - Matheus Fernandes Carillo | Data Visualization</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">Portfólio - Matheus Fernandes Carillo</a>
+            <a href="index.html" class="logo">Matheus Fernandes Carillo</a>
             <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="pages/sobre.html">Sobre</a></li>
                 <li><a href="pages/projetos.html">Projetos</a></li>
                 <li><a href="pages/contato.html">Contato</a></li>
@@ -30,9 +30,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Dashboards Interativos</h1>
-            <p>Criação de dashboards e visualizações de dados com Python e PowerBI</p>
-            <a href="pages/projetos.html" class="btn">Ver Projetos</a>
+            <h1>Transformando Dados em Insights</h1>
+            <p>Criação de dashboards interativos e visualizações de dados com Python, Power BI e tecnologias modernas</p>
+            <a href="pages/projetos.html" class="btn">Explorar Projetos</a>
         </div>
     </section>
 
@@ -41,29 +41,28 @@
         <div class="container">
             <div class="section-title">
                 <h2>Projetos em Destaque</h2>
-                <p>Alguns dos meus melhores trabalhos</p>
+                <p>Dashboards interativos que transformam dados complexos em insights acionáveis</p>
             </div>
             <div class="projects-grid">
                 <!-- Projeto 1 -->
-                <div class="project-card">
+                <div class="project-card fade-in">
                     <div class="project-image">
                         <img src="imagens/dash1.png" alt="Dashboard Jogos">
                     </div>
                     <div class="project-content">
                         <h3>Dashboard de Jogos</h3>
-                        <p>Análise relacionada a dados de jogos</p>
+                        <p>Análise interativa de dados de jogos com visualizações dinâmicas e filtros avançados</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Plotly</span>
                             <span class="project-tag">Pandas</span>
                             <span class="project-tag">Numpy</span>
                             <span class="project-tag">Matplotlib</span>
-                            <span class="project-tag">seaborn</span>
-                            <span class="project-tag">Java Script</span>
+                            <span class="project-tag">Seaborn</span>
                         </div>
                         <div class="project-links">
                             <a href="https://matheusfernandescarillo.github.io/analise-jogos" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver Completo
+                                <i class="fas fa-external-link-alt"></i> Ver Dashboard
                             </a>
                             <a href="https://github.com/MatheusFernandesCarillo/analise-jogos" class="project-link">
                                 <i class="fab fa-github"></i> Código
@@ -73,25 +72,23 @@
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="project-card">
+                <div class="project-card fade-in">
                     <div class="project-image">
                         <img src="imagens/dash2.png" alt="Dashboard Animes">
                     </div>
                     <div class="project-content">
                         <h3>Dashboard de Animes</h3>
-                        <p>Análise baseada nos dados do MyAnimeList</p>
+                        <p>Análise exploratória dos dados do MyAnimeList com insights sobre tendências e popularidade</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Plotly</span>
                             <span class="project-tag">Pandas</span>
-                            <span class="project-tag">Numpy</span>
-                            <span class="project-tag">Matplotlib</span>
-                            <span class="project-tag">seaborn</span>
-                            <span class="project-tag">Java Script</span>
+                            <span class="project-tag">Web Scraping</span>
+                            <span class="project-tag">Visualização</span>
                         </div>
                         <div class="project-links">
                             <a href="https://matheusfernandescarillo.github.io/analise-animes" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver Completo
+                                <i class="fas fa-external-link-alt"></i> Ver Dashboard
                             </a>
                             <a href="https://github.com/MatheusFernandesCarillo/analise-animes" class="project-link">
                                 <i class="fab fa-github"></i> Código
@@ -101,23 +98,26 @@
                 </div>
 
                 <!-- Projeto 3 -->
-                <div class="project-card">
+                <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/2ecc71/ffffff" alt="Dashboard Analytics">
+                        <div style="background: linear-gradient(45deg, var(--secondary), var(--success)); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
+                            <i class="fas fa-chart-line" style="font-size: 3rem; margin-bottom: 10px;"></i>
+                            <p>Novo Projeto em Desenvolvimento</p>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3>Em breve</h3>
-                        <p></p>
+                        <h3>Em Breve</h3>
+                        <p>Novo dashboard interativo com tecnologias avançadas de visualização de dados</p>
                         <div class="project-tags">
-                            <span class="project-tag"></span>
-                            <span class="project-tag"></span>
-                            <span class="project-tag"></span>
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">ETL</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Em breve
+                                <i class="fas fa-clock"></i> Em Breve
                             </a>
-                            
                         </div>
                     </div>
                 </div>
@@ -132,26 +132,26 @@
     <section class="skills-section">
         <div class="container">
             <div class="section-title">
-                <h2>Tecnologias</h2>
-                <p>Tecnologias e ferramentas que utilizo</p>
+                <h2>Tecnologias & Ferramentas</h2>
+                <p>Tecnologias modernas que utilizo para criar soluções de dados impactantes</p>
             </div>
             <div class="skills-grid">
-                <div class="skill-item">
+                <div class="skill-item fade-in">
                     <i class="fab fa-python"></i>
-                    <h3>Python</h3>
-                    <p>Pandas, NumPy, Matplotlib, Plotly, Seaborn, Streamlit</p>
+                    <h3>Python & Análise de Dados</h3>
+                    <p>Pandas, NumPy, Matplotlib, Plotly, Seaborn, Streamlit, Scikit-learn</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item fade-in">
                     <i class="fas fa-chart-bar"></i>
-                    <h3>Power BI</h3>
-                    <p>DAX, Power Query, Relatórios Interativos, ETL</p>
+                    <h3>Power BI & Business Intelligence</h3>
+                    <p>DAX, Power Query, Relatórios Interativos, ETL, Modelagem de Dados</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item fade-in">
                     <i class="fas fa-database"></i>
-                    <h3>Banco de Dados</h3>
-                    <p>MySQL, PostgreSQL</p>
+                    <h3>Banco de Dados & SQL</h3>
+                    <p>MySQL, PostgreSQL, Consultas Complexas, Otimização, Modelagem</p>
                 </div>
-                
+               
             </div>
         </div>
     </section>
@@ -161,11 +161,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <div class="footer-logo">Portfólio - Matheus Fernandes Carillo</div>
-                    <p>Criação de dashboards e visualizações de dados interativas.</p>
+                    <div class="footer-logo">Matheus Carillo</div>
+                    <p>Especialista em transformar dados complexos em visualizações claras e insights acionáveis.</p>
                     <div class="social-links">
                         <a href="https://github.com/MatheusFernandesCarillo"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/matheus-fernandes-carillo-899050188"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:matheus.fernandes.carillo@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -177,12 +178,22 @@
                         <li><a href="pages/contato.html">Contato</a></li>
                     </ul>
                 </div>
-                
+                <div class="footer-column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Dashboards Interativos</a></li>
+                        <li><a href="#">Visualização de Dados</a></li>
+                        <li><a href="#">Análise de Dados</a></li>
+                        <li><a href="#">Consultoria em BI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
             
+            </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
 </body>
-
 </html>
