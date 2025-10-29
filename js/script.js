@@ -60,6 +60,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const checkVisibility = () => {
+        fadeElements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+            
+            if (elementPosition < screenPosition) {
+                element.classList.add('visible');
+            }
+        });
+    };
+
+    // Check on load and scroll
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Initial check
+
+    // Add subtle parallax effect to hero
+    window.addEventListener('scroll', function() {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        if (hero) {
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+    });
+
     // Form validation
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
@@ -79,30 +106,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Animation on scroll
-    const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.project-card, .skill-item');
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.2;
-            
-            if (elementPosition < screenPosition) {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
-            }
-        });
-    };
-
-    // Set initial state for animation
-    document.querySelectorAll('.project-card, .skill-item').forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    });
-
-    window.addEventListener('scroll', animateOnScroll);
-    // Trigger once on load
-    animateOnScroll();
 });
