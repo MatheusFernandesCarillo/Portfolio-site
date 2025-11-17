@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Matheus Fernandes Carillo | Data Visualization</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Projetos - Matheus Fernandes Carillo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">Matheus Fernandes Carillo</a>
+            <a href="../index.html" class="logo">Matheus Fernandes Carillo</a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="pages/sobre.html">Sobre</a></li>
-                <li><a href="pages/projetos.html">Projetos</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html" class="active">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -27,42 +25,40 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Transformando Dados em Insights</h1>
-            <p>Criação de dashboards interativos e visualizações de dados com Python, Power BI e tecnologias modernas</p>
-            <a href="pages/projetos.html" class="btn">Explorar Projetos</a>
-        </div>
-    </section>
-
-    <!-- Featured Projects -->
-    <section class="featured-projects">
+    <section class="projects-page">
         <div class="container">
             <div class="section-title">
-                <h2>Projetos em Destaque</h2>
-                <p>Dashboards interativos que transformam dados complexos em insights acionáveis</p>
+                <h1>Meus Projetos</h1>
+                <p>Explore todos os meus dashboards e projetos de visualização de dados</p>
             </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            </div>
+
             <div class="projects-grid">
                 <!-- Projeto 1 -->
-                <div class="project-card fade-in">
+                <div class="project-card" data-category="python">
                     <div class="project-image">
-                        <img src="imagens/dash1.png" alt="Dashboard Jogos">
+                        <img src="../imagens/dash1.png" alt="Dashboard Jogos">
                     </div>
                     <div class="project-content">
                         <h3>Dashboard de Jogos</h3>
-                        <p>Análise interativa de dados de jogos com visualizações dinâmicas e filtros avançados</p>
+                        <p>Análise relacionada a dados de jogos</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Plotly</span>
                             <span class="project-tag">Pandas</span>
                             <span class="project-tag">Numpy</span>
                             <span class="project-tag">Matplotlib</span>
-                            <span class="project-tag">Seaborn</span>
+                            <span class="project-tag">seaborn</span>
                         </div>
                         <div class="project-links">
                             <a href="https://matheusfernandescarillo.github.io/analise-jogos" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver Dashboard
+                                <i class="fas fa-external-link-alt"></i> Ver Completo
                             </a>
                             <a href="https://github.com/MatheusFernandesCarillo/analise-jogos" class="project-link">
                                 <i class="fab fa-github"></i> Código
@@ -72,23 +68,25 @@
                 </div>
 
                 <!-- Projeto 2 -->
-                <div class="project-card fade-in">
+                <div class="project-card" data-category="java">
                     <div class="project-image">
-                        <img src="imagens/dash2.png" alt="Dashboard Animes">
+                         <img src="../imagens/dash2.png" alt="Dashboard Animes">
                     </div>
                     <div class="project-content">
                         <h3>Dashboard de Animes</h3>
-                        <p>Análise exploratória dos dados do MyAnimeList com insights sobre tendências e popularidade</p>
+                        <p>Análise baseada nos dados do MyAnimeList</p>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Plotly</span>
                             <span class="project-tag">Pandas</span>
-                            <span class="project-tag">Web Scraping</span>
-                            <span class="project-tag">Visualização</span>
+                            <span class="project-tag">Numpy</span>
+                            <span class="project-tag">Matplotlib</span>
+                            <span class="project-tag">seaborn</span>
+                            <span class="project-tag">Java Script</span>
                         </div>
-                        <div class="project-links">
+                         <div class="project-links">
                             <a href="https://matheusfernandescarillo.github.io/analise-animes" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver Dashboard
+                                <i class="fas fa-external-link-alt"></i> Ver Completo
                             </a>
                             <a href="https://github.com/MatheusFernandesCarillo/analise-animes" class="project-link">
                                 <i class="fab fa-github"></i> Código
@@ -97,64 +95,33 @@
                     </div>
                 </div>
 
-                <!-- Projeto 3 -->
-        
-                <div class="project-card fade-in">
+                <!-- Projeto 3 - Dashboard Imobiliário -->
+                <div class="project-card" data-category="javascript">
                     <div class="project-image">
-                        <img src="imagens/dash3.png" alt="Dashboard Imobiliario">
+                         <img src="../imagens/dash3.png" alt="Dashboard Imobiliário">
                     </div>
                     <div class="project-content">
-                        <h3>Dashboard Imobiliario</h3>
+                        <h3>Dashboard Imobiliário</h3>
                         <p>Dashboard para análise estratégica do mercado imobiliário: tendências, perfil de clientes e benchmark competitivo.</p>
                         <div class="project-tags">
-                            <span class="project-tag">PowerBI</span>
+                            <span class="project-tag">Power BI</span>
                             <span class="project-tag">DAX</span>
-                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Data Visualization</span>
+                            <span class="project-tag">Business Intelligence</span>
                         </div>
-                        <div class="project-links">
+                         <div class="project-links">
                             <a href="https://app.powerbi.com/view?r=eyJrIjoiMDk4YWJiODAtOTg5OS00ZWQ3LTk0MjgtNzQ4NWQzZjk0ZGI5IiwidCI6IjgzZWE2ZGJmLTkzYTQtNGZmNy05NTk4LTNhZDA4NWIwNWU4MyJ9&pageName=ReportSection&navContentPaneEnabled=false" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Ver Dashboard
+                                <i class="fas fa-external-link-alt"></i> Ver Completo
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="pages/projetos.html" class="btn btn-outline">Ver Todos os Projetos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Tecnologias & Ferramentas</h2>
-                <p>Tecnologias modernas que utilizo para criar soluções de dados impactantes</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-item fade-in">
-                    <i class="fab fa-python"></i>
-                    <h3>Python & Análise de Dados</h3>
-                    <p>Pandas, NumPy, Matplotlib, Plotly, Seaborn, Streamlit, Scikit-learn</p>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Power BI & Business Intelligence</h3>
-                    <p>DAX, Power Query, Relatórios Interativos, ETL, Modelagem de Dados</p>
-                </div>
-                <div class="skill-item fade-in">
-                    <i class="fas fa-database"></i>
-                    <h3>Banco de Dados & SQL</h3>
-                    <p>MySQL, PostgreSQL, Consultas Complexas, Otimização, Modelagem</p>
                 </div>
                
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+   <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -175,7 +142,8 @@
                         <li><a href="pages/contato.html">Contato</a></li>
                     </ul>
                 </div>
-                
+               
+            </div>
             <div class="footer-bottom">
             
             </div>
@@ -185,7 +153,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
-
