@@ -35,12 +35,34 @@
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="java">Java</button>
+                <button class="filter-btn" data-filter="powerbi">Power BI</button>
                 <button class="filter-btn" data-filter="javascript">JavaScript</button>
             </div>
 
             <div class="projects-grid">
-                <!-- Projeto 1 -->
+                <!-- Projeto 1 - Dashboard Imobiliário (NOVO) -->
+                <div class="project-card" data-category="powerbi">
+                    <div class="project-image">
+                        <img src="../imagens/dash3.png" alt="Dashboard Imobiliário">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Imobiliário</h3>
+                        <p>Dashboard para análise estratégica do mercado imobiliário: tendências, perfil de clientes e benchmark competitivo</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Análise de Mercado</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiMDk4YWJiODAtOTg5OS00ZWQ3LTk0MjgtNzQ4NWQzZjk0ZGI5IiwidCI6IjgzZWE2ZGJmLTkzYTQtNGZmNy05NTk4LTNhZDA4NWIwNWU4MyJ9&pageName=ReportSection&navContentPaneEnabled=false" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Ver Completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
                 <div class="project-card" data-category="python">
                     <div class="project-image">
                         <img src="../imagens/dash1.png" alt="Dashboard Jogos">
@@ -67,8 +89,8 @@
                     </div>
                 </div>
 
-                <!-- Projeto 2 -->
-                <div class="project-card" data-category="java">
+                <!-- Projeto 3 -->
+                <div class="project-card" data-category="python javascript">
                     <div class="project-image">
                          <img src="../imagens/dash2.png" alt="Dashboard Animes">
                     </div>
@@ -82,7 +104,7 @@
                             <span class="project-tag">Numpy</span>
                             <span class="project-tag">Matplotlib</span>
                             <span class="project-tag">seaborn</span>
-                            <span class="project-tag">Java Script</span>
+                            <span class="project-tag">JavaScript</span>
                         </div>
                          <div class="project-links">
                             <a href="https://matheusfernandescarillo.github.io/analise-animes" class="project-link">
@@ -116,10 +138,10 @@
                 <div class="footer-column">
                     <h4>Links Rápidos</h4>
                     <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="pages/sobre.html">Sobre</a></li>
-                        <li><a href="pages/projetos.html">Projetos</a></li>
-                        <li><a href="pages/contato.html">Contato</a></li>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
                
@@ -130,6 +152,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
