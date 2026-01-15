@@ -40,15 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (filterButtons.length > 0) {
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Remove active class from all buttons
                 filterButtons.forEach(btn => btn.classList.remove('active'));
-                
-                // Add active class to clicked button
                 this.classList.add('active');
-                
                 const filterValue = this.getAttribute('data-filter');
                 
-                // Filter projects
                 projectCards.forEach(card => {
                     if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
                         card.style.display = 'block';
@@ -62,21 +57,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animation on scroll
     const fadeElements = document.querySelectorAll('.fade-in');
-    
     const checkVisibility = () => {
         fadeElements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
             const screenPosition = window.innerHeight / 1.2;
-            
             if (elementPosition < screenPosition) {
                 element.classList.add('visible');
             }
         });
     };
 
-    // Check on load and scroll
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // Initial check
+    checkVisibility();
 
     // Add subtle parallax effect to hero
     window.addEventListener('scroll', function() {
@@ -92,18 +84,51 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
             if (name && email && message) {
-                // Here you would typically send the form data to a server
                 alert('Mensagem enviada com sucesso! Entrarei em contato em breve.');
                 contactForm.reset();
             } else {
                 alert('Por favor, preencha todos os campos obrigatórios.');
             }
         });
+    }
+
+/* ==========================================
+       ZOOM NAS IMAGENS (VERSÃO SEM PULO)
+       ========================================== */
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("imgExpanded");
+
+    if (modal && modalImg) {
+        document.querySelectorAll('.dashboard-visual img').forEach(img => {
+            img.onclick = function() {
+                // MUITO IMPORTANTE: mudar para 'flex'
+                modal.style.display = "flex"; 
+                modalImg.src = this.src;
+                document.body.style.overflow = "hidden";
+            }
+        });
+
+        // Clique no fundo fecha
+        modal.onclick = function(e) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        };
+
+        // Clique na imagem NÃO fecha
+        modalImg.onclick = function(e) {
+            e.stopPropagation();
+        };
+
+        const closeModal = document.querySelector('.close-modal');
+        if (closeModal) {
+            closeModal.onclick = function() {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            };
+        }
     }
 });
