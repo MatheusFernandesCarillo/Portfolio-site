@@ -276,10 +276,10 @@ nav {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 3rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 projetos lado a lado */
+    gap: 2rem;
 }
+
 
 /* Cards com efeito glassmorphism */
 .project-card {
@@ -993,4 +993,335 @@ footer {
 .social-link-item:hover {
     background: var(--accent);
     transform: translateY(-3px);
+}
+
+.page-offset {
+    padding-top: 110px;
+}
+
+.project-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.project-image {
+    flex: 1.2; /* Dá um pouco mais de destaque para a imagem */
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h1 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.analysis-item {
+    margin-bottom: 20px;
+}
+
+.analysis-item h3 {
+    font-size: 1.1rem;
+    color: #d35400; /* Tom que combina com o seu dashboard */
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.analysis-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.highlight {
+    background: #fff5f0;
+    padding: 15px;
+    border-left: 4px solid #e67e22;
+    border-radius: 4px;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 968px) {
+    .project-container {
+        flex-direction: column;
+    }
+}
+
+.dashboard-flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.dashboard-visual {
+    flex: 2; /* Imagem ganha mais prioridade de largura */
+}
+
+.dashboard-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.dashboard-description {
+    flex: 1;
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-size: 0.78rem; /* Fonte reduzida para não ultrapassar a imagem */
+    line-height: 1.35;   /* Espaçamento entre linhas mais compacto */
+}
+
+.main-title {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #a34e3a;
+    display: inline-block;
+}
+
+.orange-title {
+    color: #ffaa80 !important;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.topic {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topic p {
+    margin: 0;
+}
+
+.alert-card {
+    background-color: rgba(163, 78, 58, 0.15);
+    border-left: 3px solid #ffaa80;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Em telas muito grandes, trava a largura do texto para não esticar demais */
+@media (min-width: 1400px) {
+    .dashboard-description {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .dashboard-flex-container {
+        flex-direction: column;
+    }
+    .dashboard-description {
+        font-size: 0.95rem; /* No celular a fonte volta a ser legível */
+    }
+}
+
+/* Estilo da legenda embaixo da imagem */
+.image-caption {
+    display: block;
+    color: rgba(255, 255, 255, 0.6); /* Branco suave/cinza */
+    font-size: 0.75rem;
+    margin-top: 8px;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Mantendo o restante do ajuste de alinhamento */
+.dashboard-flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.dashboard-visual {
+    flex: 2;
+}
+
+.dashboard-description {
+    flex: 1;
+    font-size: 0.78rem;
+    line-height: 1.35;
+}
+
+/* Estilo para transformar o cursor em lupa nas imagens do dashboard */
+.dashboard-visual img {
+    cursor: zoom-in;
+    transition: 0.3s;
+}
+
+.dashboard-visual img:hover {
+    opacity: 0.9;
+}
+
+/* O Modal (fundo preto) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.9); 
+    overflow: auto;
+}
+
+/* Imagem dentro do Modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    animation: zoom 0.3s;
+}
+
+/* Animação de entrada */
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Botão de Fechar */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #ffaa80;
+}
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* O fundo (Modal) */
+.modal {
+    display: none; /* O JS vai mudar para 'flex' */
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    /* Centralização Flexbox (Mais estável que absolute) */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* A Imagem ampliada */
+.modal-content {
+    display: block;
+    max-width: 85%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    cursor: default;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    border: 2px solid rgba(255,255,255,0.1);
+    /* Removemos o transform para evitar o pulo/atraso */
+    pointer-events: auto;
+}
+/* Indica ao usuário que a imagem é clicável */
+.dashboard-visual img {
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-visual img:hover {
+    transform: scale(1.02); /* Dá uma leve "saltada" ao passar o mouse */
+    filter: brightness(1.1);
+}
+
+/* ==========================================
+   ESTILO DO CABEÇALHO DA ANÁLISE
+   ========================================== */
+.analysis-header {
+    text-align: center;
+    padding: 60px 20px 40px 20px; /* Mais espaço no topo para o menu não cobrir */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.analysis-title {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.analysis-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.analysis-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #ffaa80; /* Cor de destaque para os ícones/texto */
+}
+
+.analysis-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ajustes para telas menores (Celulares) */
+@media (max-width: 768px) {
+    .analysis-header {
+        padding: 40px 15px 20px 15px;
+    }
+    
+    .analysis-title {
+        font-size: 2rem;
+    }
+    
+    .analysis-meta {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
 }
