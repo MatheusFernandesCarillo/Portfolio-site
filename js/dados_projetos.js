@@ -6,7 +6,7 @@ const projetos = [
         descricao: "Análise completa de vendas de supermercado, com insights por período e filial.",
         tags: ["Power BI", "DAX", "SQL"],
         links: [
-            { tipo: "externo", url: "https://app.powerbi.com/view?r=eyJrIjoiYWU1ZGMwZGQtN2E1Zi00YjE1LWE4OWQtYTljYjFiM2I2N2IwIiwidCI6IjgzZWE2ZGJmLTkzYTQtNGZmNy05NTk4LTNhZDA4NWIwNWU4MyJ9", texto: "Ver Dashboard" },
+            { tipo: "externo", url: "../pages/dashboards-powerbi/dashboard-vendas-bi.html", texto: "Ver Dashboard" },
             { tipo: "analise", url: "../pages/dashboards-analisados/dashboard-supermercado.html", texto: "Análise Completa" }
         ]
     },
