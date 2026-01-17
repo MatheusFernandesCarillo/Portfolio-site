@@ -2,11 +2,11 @@
    1. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS
    ========================================== */
 :root {
-    --primary: #1a1a2e;
+    --primary: #16213f; 
+    --dark: #0e3460;    
     --secondary: #0f4c75;
     --accent: #ff6b6b;
     --light: #16213e;
-    --dark: #0f3460;
     --text: #e6e6e6;
     --text-light: #a0a0a0;
     --success: #4ecdc4;
@@ -449,7 +449,7 @@ nav {
 /* ==========================================
    9. ANÁLISE DE PROJETOS & DASHBOARD
    ========================================== */
-.analysis-header { text-align: center; padding: 60px 20px 40px; max-width: 900px; margin: 0 auto; }
+.analysis-header { text-align: center; padding: 120px 20px 40px; max-width: 900px; margin: 0 auto; }
 .analysis-title { font-size: 2.8rem; color: #ffffff; margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
 .analysis-subtitle { font-size: 1.2rem; color: rgba(255, 255, 255, 0.8); line-height: 1.7; margin-bottom: 25px; }
 .analysis-meta { display: flex; justify-content: center; gap: 30px; color: #ffaa80; }
@@ -549,4 +549,99 @@ footer { background-color: var(--dark); color: white; padding: 60px 0 20px; }
 
 @media (min-width: 1400px) {
     .dashboard-description { max-width: 450px; }
+}
+
+/* Garante que o fundo da página de análise seja o azul escuro */
+.analysis-page-bg {
+    background-color: #1a1a2e !important;
+    color: #e6e6e6;
+}
+
+/* Ajuste específico para a caixa de descrição lateral para combinar com o fundo */
+.dashboard-description {
+    background: rgba(255, 255, 255, 0.03); /* Um leve brilho para destacar do fundo azul */
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste do iframe para não ter bordas brancas estranhas */
+.dashboard-visual iframe {
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-full-container {
+    background: none !important; /* Remove qualquer fundo branco */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Garante que o rodapé fique sempre embaixo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Container que se adapta ao Power BI sem cortar nada */
+.dashboard-mask {
+    position: relative;
+    width: 100%;
+    /* 56.25% é o 16:9. Aumentamos para 60% para dar folga para a barra de botões */
+    padding-bottom: 60%; 
+    background-color: #16213f; /* Fundo do seu site */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Iframe em tamanho real (100%) para não cortar os lados */
+.dashboard-mask iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Garante que o conteúdo se ajuste ao espaço sem gerar barras brancas extras */
+    object-fit: contain; 
+}
+
+.analysis-action {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.btn-analysis {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0078d4; /* Azul padrão Power BI ou use o seu azul */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-analysis:hover {
+    background-color: #005a9e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.btn-analysis i {
+    font-size: 1.2rem;
 }
