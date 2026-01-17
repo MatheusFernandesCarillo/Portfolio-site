@@ -1,1 +1,241 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Performance - Supermercado - Matheus Fernandes Carillo</title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+
+<body>
+
+<header>
+    <nav class="container">
+        <a href="../../index.html" class="logo">Matheus Fernandes Carillo</a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../sobre.html">Sobre</a></li>
+            <li><a href="../projetos.html" class="active">Projetos</a></li>
+            <li><a href="../contato.html">Contato</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="page-offset">
+
+    <section class="container">
+    <div class="analysis-header">
+        <h1 class="analysis-title">Análise de Performance: Operação de Supermercados</h1>
+        <p class="analysis-subtitle">Análise detalhada de performance, faturamento e comportamento do consumidor baseada em dados reais de três filiais.</p>
+        
+        <div class="analysis-meta">
+            <span><i class="fas fa-chart-line"></i> Power BI + Análise de Dados</span>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="../dashboards-powerbi/dashboard-vendas-bi.html" class="btn">
+                <i class="fas fa-external-link-alt"></i> Acessar Dashboard Interativo
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="container">
+        <div class="dashboard-flex-container">
+            <div class="dashboard-visual">
+                <img src="../../imagens/dashboard-supermercado/pag1-sm.png" alt="Visão Geral de Vendas">
+                <span class="image-caption">Visão Geral das Vendas</span>
+            </div>
+            <div class="dashboard-description">
+                <h2 class="main-title">Análise de Vendas</h2>
+                <div class="topic">
+                    <strong class="orange-title">Comportamento dos Clientes:</strong>
+                    <p>o Faturamento foi de $323 mil, tendo um ticket médio de $323. O Que mostra um padrão que os clientes não vão ao mercado para fazer compras pequenas, tendo alto volume de transação.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Sazonalidade e Gargalos:</strong>
+                    <p>O Gráfico mensal mostra que o começo do ano tende a ser mais fraco, começando em abril com $274, sendo o ponto mais fraco, voltando a subir a partir de agosto com $329, tendo seu pico no final do Ano, em dezembro com $383.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Performance por unidade:</strong>
+                    <p>É possível ver uma diferença clara entre a filial C (Naypyitaw), que é nossa unidade mais eficiente, com a filial A (Yangon), sendo nossa unidade menos eficiente. Há uma oportunidade de entender o que deu certo na filial C, que possa ser aplicado na unidade A.</p>
+                </div>
+                <div class="alert-card">
+                    <strong class="orange-title">Ponto de Atenção:</strong>
+                    <p>Vale ressaltar que a margem bruta é de $4,8 mil, tendo um faturamento de mais de $300 mil, tem uma margem muito apertada. Sugerindo que embora tenha um alto volume de vendas, pode ser que haja necessidade de revisar a estratégia de preços, para garantir uma maior saúde dos negócios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="container">
+        <div class="dashboard-flex-container reverse">
+            <div class="dashboard-description">
+                <h2 class="main-title">Análise de Fidelização</h2>
+                <div class="topic">
+                    <strong class="orange-title">Fidelização:</strong>
+                    <p>A Base de clientes é praticamente dívida igualmente entre Membros (51%) e Clientes Normais (49%). Indicando que o supermercado tem uma boa taxa de retenção, mas que ainda há uma boa margem de conversão em membros.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Frequência de Compra:</strong>
+                    <p>Assim como os Clientes, a Frequência de compras também é praticamente igual, sendo 501 compras de Membros e 499 de Clientes Normais. Sugerindo que talvez o incentivo do programa de fidelidade não seja forte.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Distribuição Geográfica:</strong>
+                    <p>Yangon é a cidade com mais clientes normais e, Naypyitaw é a única filial que o numero de membros supera o de clientes normais, sendo o maior cenário de engajamento regional.</p>
+                </div>
+                <div class="alert-card">
+                    <strong class="orange-title">Recorte de Gênero:</strong>
+                    <p>o publico feminino é maioria, representando 52% das transações feitas. Sendo um dado bom para redirecionar para campanhas de marketing.</p>
+                </div>
+            </div>
+            <div class="dashboard-visual">
+                <img src="../../imagens/dashboard-supermercado/pag2-sm.png" alt="Fidelização">
+                <span class="image-caption">Fidelização e Perfil do Cliente</span>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="container">
+        <div class="dashboard-flex-container">
+            <div class="dashboard-visual">
+                <img src="../../imagens/dashboard-supermercado/pag3-sm.png" alt="Análise de Produtos">
+                <span class="image-caption">Análise de Produtos e Categorias</span>
+            </div>
+            <div class="dashboard-description">
+                <h2 class="main-title">Análise por Categoria</h2>
+                <div class="topic">
+                    <strong class="orange-title">Vendas e Volumes:</strong>
+                    <p>A Categoria “Food and beverages” sendo a principal categoria do supermercado, liderando tanto em itens vendidos (952 itens), como também em Faturamento total ($56 mil).</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Equilíbrio de Receita:</strong>
+                    <p>Existe um bom equilíbrio entre as quatro principais categorias (Food, Sports, Fashion e Home). Com todas tendo um faturamento com uma média de $54 a 56 mil, mostrando que o supermercado não depende da apenas uma categoria.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Performance de nicho:</strong>
+                    <p>A categoria “Health and beauty” é a que apresenta um menor volume de vendas (854 itens) e menor ganho ($49 mil). Sendo um setor com potencial de crescimento e que talvez precise de uma revisão no estoque.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Realidade de Margens:</strong>
+                    <p>Embora “Fashion acessories” não seja líder em vendas, é a categoria que mais tem lucro (1,56%). Em contrapartida, “Home and lifestyle” tem o menor lucro (1,41%).</p>
+                </div>
+                <div class="alert-card">
+                    <strong class="orange-title">Visão Crítica:</strong>
+                    <p>A margem média geral reforça o insight da primeira página. O lucro por produto é muito baixo. O foco deve ser priorizar categorias como “Fashion” para aumentar a rentabilidade total.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="container">
+        <div class="dashboard-flex-container reverse">
+            <div class="dashboard-description">
+                <h2 class="main-title">Análise Temporal</h2>
+                <div class="topic">
+                    <strong class="orange-title">Comportamento Semanal:</strong>
+                    <p>Os picos de vendas ocorrem na terça-feira ($55 mil), seguido por domingo ($50 mil). Com segunda-feira sendo o menor ($35 mil).</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Concentração Mensal:</strong>
+                    <p>Existe uma queda drástica em vendas após o primeiro trimestre. Enquanto janeiro começa com $87 mil, tendo uma queda drástica nos meses seguintes, ficando entorno de $8 mil a partir de abril.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Médias de Operação:</strong>
+                    <p>o negocio tem uma media de vendas de 306,5 e uma média mensal de 382,6. Indicando uma operação constante, mas que sofre uma queda de tração de grandes volumes financeiros ao longo do ano.</p>
+                </div>
+                <div class="alert-card">
+                    <strong class="orange-title">Dinâmica Diária:</strong>
+                    <p>Percebe-se que o maior faturamento ocorre nos primeiros 5 dias do mês (atingindo $49 mil), com um esvaziamento considerável nas semanas seguintes. Reforçando o consumo atrelado ao recebimento do salário.</p>
+                </div>
+            </div>
+            <div class="dashboard-visual">
+                <img src="../../imagens/dashboard-supermercado/pag4-sm.png" alt="Análise Temporal">
+                <span class="image-caption">Análise de Tendências e Médias Temporais</span>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="container">
+        <div class="dashboard-flex-container">
+            <div class="dashboard-visual">
+                <img src="../../imagens/dashboard-supermercado/pag5-sm.png" alt="Análise de Filial">
+                <span class="image-caption">Análise de Performance por Filial</span>
+            </div>
+            <div class="dashboard-description">
+                <h2 class="main-title">Análise de Filial</h2>
+                <div class="topic">
+                    <strong class="orange-title">Liderança e Eficiência:</strong>
+                    <p>A filial C é a unidade com melhor Perfomance em todos os indicadores. Não liderando apenas o total de vendas, com $111 mil, como também o maior ticket médio, com $337.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Atingimento de Metas:</strong>
+                    <p>O KPI do lucro da operação foi de $110,6 mil, superando a meta estabelecida de $105,3 mil, em 5%. Com o resultado sendo principalmente pela Filial C.</p>
+                </div>
+                <div class="topic">
+                    <strong class="orange-title">Equilibro de Mercado:</strong>
+                    <p>Existe uma acirrada disputa pelo segundo lugar. Com a participação de mercado da Filial A ($106,2 mil) e a Filial B ($106,1 mil) sendo praticamente iguais, com ambas tendo 32,8% de participação.</p>
+                </div>
+                <div class="alert-card">
+                    <strong class="orange-title">Oportunidade de Melhoria:</strong>
+                    <p>Mesmo com a Filial A sendo a segunda do ranking de faturamento total, ela tem o menor ticket médio ($312), mostrando que apesar de um bom numero de clientes, ela precisara de estratégias para elevar o valor de cada transação no mesmo nível da Filial C.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">Matheus Fernandes Carillo</div>
+                <p>Especialista em transformar dados complexos em visualizações claras e insights acionáveis.</p>
+                <div class="social-links">
+                    <a href="https://github.com/MatheusFernandesCarillo"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/matheus-fernandes-carillo-899050188"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:matheus.fernandes.carillo@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgExpanded">
+</div>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>
